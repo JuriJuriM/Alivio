@@ -19,7 +19,6 @@ body {
   z-index: 50;
   &__body {
     position: relative;
-    z-index: 2;
     display: flex;
     justify-content: space-between;
     height: 85px;
@@ -30,8 +29,17 @@ body {
     margin: 0 auto;
     padding: 0 10px;
   }
+  &__logo {
+    z-index: 3;
+  }
+  &__logo img {
+    max-width: 100%;
+    display: block;
+  }
   &__list {
     display: flex;
+    position: relative;
+    z-index: 2;
   }
   &__link {
     font-family: "Lato";
@@ -77,6 +85,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgb(209, 209, 225);
+  z-index: 2;
 }
 
 @media (max-width: 1300px) {
@@ -87,11 +96,19 @@ body {
 
 @media (max-width: 880px) {
   .header {
+    &__body {
+      height: 50px;
+    }
+    &__logo {
+      flex: 0 0 70px;
+    }
     &__burger {
       display: block;
       position: relative;
       width: 30px;
       height: 20px;
+      position: relative;
+      z-index: 3;
     }
     &__burger span {
       position: absolute;
@@ -123,6 +140,13 @@ body {
       width: 100%;
       height: 100%;
       background-color: #04241b;
+      padding: 60px 10px 20px 10px;
+    }
+    &__list {
+      display: block;
+    }
+    &__list li {
+      margin-bottom: 20px;
     }
     &__link {
       color: #ffffff;
