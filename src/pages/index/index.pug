@@ -6,4 +6,26 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Alivio
     body 
-        h1 Hi Alivio! I am here!
+        .wrapper 
+            header.header 
+                .header 
+                    .header__container 
+                        .header__body 
+                            a.header__logo(href='#') 
+                                img(src=require("../../img/svg/Logo.png") alt='Logo') 
+                            .header__burger 
+                                span.header__span 
+                            nav.header__menu 
+                                ul.header__list
+                                    li
+                                        a.header__link(href='#') Why Alivio
+                                    li
+                                        a.header__link(href='#') Solutions
+                                    li
+                                        a.header__link(href='#') Community
+                                    li
+                                        a.header__link(href='#') Pricing 
+                                    li
+                                        a.header__link(href='#' class='header__link-last') Sign in
+                                    button.header__demo(type='submit') Start Trial
+
