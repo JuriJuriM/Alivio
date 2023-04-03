@@ -5,7 +5,6 @@ const headerMenu = document.querySelector('.header__menu');
 const body = document.querySelector('body');
 
 function handleClick() {
-  console.log('Click');
   headerBurger.classList.toggle('active');
   headerMenu.classList.toggle('active');
   body.classList.toggle('lock');
