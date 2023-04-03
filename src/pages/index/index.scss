@@ -11,6 +11,8 @@ body {
 .wrapper {
 }
 
+// Start header styles
+
 .header {
   position: fixed;
   width: 100%;
@@ -107,7 +109,6 @@ body {
       position: relative;
       width: 30px;
       height: 20px;
-      position: relative;
       z-index: 3;
     }
     &__burger span {
