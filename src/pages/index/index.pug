@@ -8,4 +8,62 @@ html(lang="en")
     body 
         .wrapper 
             include ../../components/header/header.pug
-            
+            main.main 
+                .main__first 
+                    .first 
+                        .first__container  
+                            .first__body 
+                                .first__title Be aware, 
+                                .first__title(class='first__title-last') Manage well.
+                                .first__text Everyone experiences stress in different ways.
+                                .first__text Let Alivio guide you, in a personalized journal
+                                .first__text(class='first__text-last') experience, to overcome your stress. 
+                                button.first__button(type='submit') Find Your Way 
+                .main__how 
+                    .how 
+                        .how__container 
+                            .how__row 
+                                .how__column 
+                                    .how__content 
+                                        .how__epigraph How it works
+                                        .how__title Understand & Release 
+                                        .how__title(class='how__title-last') the stress in 3 steps
+                                .how__column 
+                                    .how__texts 
+                                        .how__text Alivio offers as many journals it takes, tackling different areas such as
+                                        .how__text anxiety, overwhelmedness, sadness, or anger, and a variety of personal
+                                        .how__text causes, to help you become aware of your emotions, and guide you in how 
+                                        .how__text to manage stress. 
+                .main__guide 
+                    .guide 
+                        .guide__container 
+                            .guide__row 
+                                .guide__column 
+                                    .guide__content 
+                                        .guide__subtitle Personalize 
+                                        .guide__texts(class='guide__texts-one') 
+                                            .guide__text Answer a quick survey about how you
+                                            .guide__text express yourself, what causes you stress,
+                                            .guide__text and what area would you like to work on.
+                                            .guide__text This way, we can fully personalize your 
+                                            .guide__text journal! 
+                                        .guide__picture 
+                                            img(src=require('../../img/svg/One.png') alt='One')
+                                .guide__column 
+                                    .guide__content 
+                                        .guide__subtitle Write & Understand 
+                                        .guide__texts 
+                                            .guide__text Write, draw, reflect, understand. Alivio will
+                                            .guide__text guide you through the prompts and will help
+                                            .guide__text you manage your stress! 
+                                        .guide__picture 
+                                            img(src=require('../../img/svg/Two.png') alt='Two')
+                                .guide__column 
+                                    .guide__content 
+                                        .guide__subtitle(class='guide__subtitle-last') Alivio! 
+                                        .guide__texts
+                                            .guide__text Now you are aware, and have a way to manage
+                                            .guide__text and overcome your own stress. 
+                                            .guide__text What are you waiting for? Alivio today!
+                                        .guide__picture 
+                                            img(src=require('../../img/svg/Three.png') alt='Three')
