@@ -255,6 +255,12 @@ body {
   }
 }
 
+@media (max-width: 1320px) {
+  .story__content {
+    padding-top: 0;
+  }
+}
+
 @media (max-width: 1238px) {
   .how__title-last {
     margin-bottom: 0;
