@@ -128,6 +128,33 @@ body {
   &__column {
     flex: 0 0 33.333%;
   }
+  &__content2 {
+    padding-top: 275px;
+  }
+  &__content3 {
+    padding-top: 60px;
+  }
+  &__num {
+    display: flex;
+  }
+  &__one {
+    margin-top: -50px;
+  }
+  &__subtitle-one {
+    margin-left: -70px;
+  }
+  &__two {
+    margin-top: -50px;
+  }
+  &__subtitle-two {
+    margin-left: -90px;
+  }
+  &__three {
+    margin-top: -50px;
+  }
+  &__subtitle-last {
+    margin-left: -40px;
+  }
   &__subtitle {
     font-family: "Georgia";
     font-style: normal;
@@ -154,5 +181,26 @@ body {
     font-size: 20px;
     line-height: 150%;
     color: #424242;
+  }
+}
+
+@media (max-width: 1238px) {
+  .how__title-last {
+    margin-bottom: 0;
+  }
+  .how__texts {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 816px) {
+  .guide__content2 {
+    padding-top: 60px;
+  }
+}
+
+@media (max-width: 770px) {
+  .how__epigraph {
+    margin-top: -60px;
   }
 }
