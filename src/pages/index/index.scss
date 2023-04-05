@@ -20,232 +20,9 @@ body {
 
 // Start main styles
 
-.main__first {
-  background: url(../../img/svg/Lady.png) center no-repeat;
-}
+@import "../../components/main/main.scss";
 
-.first {
-  &__container {
-    max-width: 1392px;
-    margin: 0 auto;
-    padding: 0 10px;
-  }
-  &__body {
-    padding-top: 175px;
-  }
-  &__title {
-    font-family: "Georgia";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 65px;
-    line-height: 74px;
-    color: #01996d;
-  }
-  &__title-last {
-    margin-bottom: 30px;
-  }
-  &__text {
-    font-family: "Lato";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 31px;
-    color: #484848;
-  }
-  &__text-last {
-    margin-bottom: 18px;
-  }
-  &__button {
-    width: 227px;
-    height: 65px;
-    background: #01996d;
-    border: 1px solid #01996d;
-    border-radius: 4px;
-    font-family: "Lato";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
-    text-align: center;
-    color: #ffffff;
-    margin-bottom: 540px;
-  }
-}
-
-.how {
-  &__container {
-    max-width: 1392px;
-    margin: 0 auto;
-    padding: 0 10px;
-  }
-  &__row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  &__epigraph {
-    font-family: "Lato";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 157%;
-    color: #424242;
-  }
-  &__title {
-    font-family: "Georgia";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 157%;
-    color: #01996d;
-  }
-  &__title-last {
-    margin-bottom: 187px;
-  }
-  &__texts {
-    padding-top: 58px;
-  }
-  &__text {
-    font-family: "Lato";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 150%;
-    color: #424242;
-  }
-}
-
-.guide {
-  &__container {
-    max-width: 1392px;
-    margin: 0 auto;
-    padding: 0 10px;
-  }
-  &__row {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  &__column {
-    flex: 0 0 33.333%;
-  }
-  &__content2 {
-    padding-top: 275px;
-  }
-  &__content3 {
-    padding-top: 60px;
-  }
-  &__num {
-    display: flex;
-  }
-  &__one {
-    margin-top: -50px;
-  }
-  &__subtitle-one {
-    margin-left: -70px;
-  }
-  &__two {
-    margin-top: -50px;
-  }
-  &__subtitle-two {
-    margin-left: -90px;
-  }
-  &__three {
-    margin-top: -50px;
-  }
-  &__subtitle-last {
-    margin-left: -40px;
-  }
-  &__subtitle {
-    font-family: "Georgia";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 150%;
-    text-align: center;
-    color: #000000;
-    margin-bottom: 55px;
-  }
-  &__subtitle-last {
-    margin-bottom: 46px;
-  }
-  &__texts {
-    margin-bottom: 37px;
-  }
-  &__texts-one {
-    margin-bottom: 60px;
-  }
-  &__text {
-    font-family: "Lato";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 150%;
-    color: #424242;
-  }
-  &__picture-two {
-    margin-bottom: 51px;
-  }
-}
-
-.story {
-  max-width: 1920px;
-  max-height: 922px;
-  background: #245852;
-  &__container {
-    max-width: 1508px;
-    margin: 0 auto;
-    padding: 0 10px;
-  }
-  &__body {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  &__content {
-    padding-top: 310px;
-  }
-  &__content2 {
-    padding-top: 229px;
-    margin-bottom: 297px;
-  }
-  &__content2 img {
-    max-width: 100%;
-    display: block;
-  }
-  &__title {
-    font-family: "Georgia";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 157%;
-    color: #ffffff;
-  }
-  &__title-last {
-    margin-bottom: 33px;
-  }
-  &__subtitle {
-    font-family: "Lato";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 25px;
-    line-height: 157%;
-    color: #ffffff;
-    margin-bottom: 57px;
-  }
-  &__button {
-    width: 240px;
-    height: 65px;
-    background: #01996d;
-    border: 1px solid #01996d;
-    border-radius: 4px;
-    font-family: "Lato";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
-    color: #ffffff;
-  }
-}
+// Finish main styles
 
 @media (max-width: 1500px) {
   .story__picture {
@@ -253,11 +30,17 @@ body {
     max-width: 896px;
     max-height: 517px;
   }
+  .story {
+    margin-bottom: 360px;
+  }
 }
 
 @media (max-width: 1320px) {
   .story__content {
     padding-top: 0;
+  }
+  .story {
+    margin-bottom: 300px;
   }
 }
 
@@ -270,9 +53,18 @@ body {
   }
 }
 
+@media (max-width: 930px) {
+  .story {
+    margin-bottom: 250px;
+  }
+}
+
 @media (max-width: 816px) {
   .guide__content2 {
     padding-top: 60px;
+  }
+  .story {
+    margin-bottom: 200px;
   }
 }
 
