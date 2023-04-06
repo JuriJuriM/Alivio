@@ -1,0 +1,34 @@
+.footer {
+  max-width: 1920px;
+  background: #245852;
+  &__container {
+    max-width: 1392px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  &__title {
+    padding-top: 95px;
+    font-family: "Avenir";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 55px;
+    color: #ffffff;
+    margin-bottom: 60px;
+  }
+  &__link {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    color: #ffffff;
+  }
+  &__li {
+    margin-bottom: 60px;
+  }
+  &__li-last {
+    padding-bottom: 144px;
+    margin-bottom: 0;
+  }
+}
