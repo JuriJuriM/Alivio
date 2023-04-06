@@ -27,16 +27,12 @@ body {
 // Start footer styles
 
 .footer {
-  width: 1920px;
-  height: 654px;
+  max-width: 1920px;
   background: #245852;
-  // &__container {
-  //   max-width: 1392px;
-  //   margin: 0 auto;
-  //   padding: 0 10px;
-  // }
-  &__content {
-    padding-left: 275px;
+  &__container {
+    max-width: 1392px;
+    margin: 0 auto;
+    padding: 0 10px;
   }
   &__title {
     padding-top: 95px;
@@ -58,6 +54,10 @@ body {
   }
   &__li {
     margin-bottom: 60px;
+  }
+  &__li-last {
+    padding-bottom: 144px;
+    margin-bottom: 0;
   }
 }
 
@@ -108,8 +108,5 @@ body {
 @media (max-width: 770px) {
   .how__epigraph {
     margin-top: -60px;
-  }
-  .footer__content {
-    padding-left: 20px;
   }
 }
